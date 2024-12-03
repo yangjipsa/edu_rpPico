@@ -2,10 +2,8 @@ from machine import Pin
 import time
 
 # GPIO 핀 설정
-SW  = [Pin(6, Pin.IN),Pin(7, Pin.IN),Pin(8, Pin.IN),Pin(9, Pin.IN)]
-
-numSWs  = len(SW)
-
+sw_red = Pin(18, Pin.IN, Pin.PULL_UP)
+sw_blu = Pin(19, Pin.IN, Pin.PULL_UP)
 
 def readSWs():
     tempValSW=[]
@@ -16,18 +14,12 @@ def readSWs():
 
 # 메인 루프
 try:
-
     while True:
-        valSWs = readSWs()
-        #print(valSWs)
+        valSW_red = sw_red.value()
+        valSW_blu = sw_blu.value()
         time.sleep(0.01)
         
-        for i in range(numSWs) :
-            if not valSWs[i] :
-                print("sw",i,"on")
-            else :
-                print("sw",i,"off")
-
-    
+        print(f"redSW : {valSW_red} | bluSW : {valSW_blu}")
+        
 except KeyboardInterrupt :
     print("Turn off")
