@@ -1,0 +1,5 @@
+1. Numpy : https://colab.research.google.com/drive/13QDfckgI9L9ODCNp0yVUJJWFOecU3rnG?usp=sharing
+2. Matplotlib : https://colab.research.google.com/drive/1FLBcycvhW6rKKMBX5mUMOlgEspPOPgWu?usp=sharing
+3. Pandas : https://colab.research.google.com/drive/1hc-72icU8HXHARcfsiCOP8uT26FTbcBB?usp=sharing
+4. Scikit-Learn : https://colab.research.google.com/drive/114hHeM8WJC5EJzGn8kYol1Ot5trAbBdj?usp=sharing
+5. Keras : https://colab.research.google.com/drive/1LzC-gsCwVsu8cOd6ZTi3gF4Wc7Zv9UD9?usp=sharing
