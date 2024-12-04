@@ -4,11 +4,11 @@ import time
 import json
 from machine import ADC
 
-SSID = 'YangJipsa_MyRoom2.4G'
-PASSWORD = 'Yangjipsa0612!'
+SSID = '와이파이 SSID'
+PASSWORD = '와이파이 패스워드'
 
-FIREBASE_URL = 'https://yangjipsa-test-78005-default-rtdb.firebaseio.com/' 
-FIREBASE_API_KEY = 'AIzaSyBM4O4DQ-17Z6_D6pxyr2U7O8xBDJOX14Q'
+FIREBASE_URL = 'Realtime Database 주소' 
+FIREBASE_API_KEY = 'API 키'
 
 def read_temp(sensorPin):
     reading = sensorPin.read_u16()
