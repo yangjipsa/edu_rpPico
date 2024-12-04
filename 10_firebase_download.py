@@ -3,10 +3,11 @@ import urequests
 import time
 from machine import Pin
 
-SSID = 'YangJipsa_MyRoom2.4G'
-PASSWORD = 'Yangjipsa0612!'
+SSID = '와이파이 SSID'
+PASSWORD = '와이파이 패스워드'
 
-FIREBASE_URL = 'https://yangjipsa-test-78005-default-rtdb.firebaseio.com/' 
+FIREBASE_URL = 'Realtime Database 주소' 
+FIREBASE_API_KEY = 'API 키'
 
 # GPIO 핀 설정
 led_red = Pin(2, Pin.OUT)
