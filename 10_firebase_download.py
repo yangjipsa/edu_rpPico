@@ -6,8 +6,11 @@ from machine import Pin
 SSID = '와이파이 SSID'
 PASSWORD = '와이파이 패스워드'
 
-FIREBASE_URL = 'Realtime Database 주소' 
-FIREBASE_API_KEY = 'API 키'
+#FIREBASE_URL = 'Realtime Database 주소' 
+#FIREBASE_API_KEY = 'API 키'
+
+FIREBASE_URL = 'https://aict-250520-default-rtdb.firebaseio.com/' 
+FIREBASE_API_KEY = 'AIzaSyBJy1g0R9vymyXW28Nfil5LmW87GMgFK3U'
 
 # GPIO 핀 설정
 led_red = Pin(2, Pin.OUT)
