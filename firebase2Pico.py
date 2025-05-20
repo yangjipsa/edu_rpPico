@@ -17,9 +17,11 @@ SSID = '네트워크 SSID'  # 자신의 Wi-Fi 이름 입력
 PASSWORD = '네트워크 PASSWORD'  # 자신의 Wi-Fi 비밀번호 입력
 
 # Firebase 설정
-FIREBASE_URL = '파이어베이스 리얼타임데이터베이스 URL'  # 파이어베이스 리얼타임 데이터베이스 URL
-FIREBASE_API_KEY = '웹API키'  # 파이어베이스 웹 API 키
+#FIREBASE_URL = '파이어베이스 리얼타임데이터베이스 URL'  # 파이어베이스 리얼타임 데이터베이스 URL
+#FIREBASE_API_KEY = '웹API키'  # 파이어베이스 웹 API 키
 
+FIREBASE_URL = 'https://aict-250520-default-rtdb.firebaseio.com/' 
+FIREBASE_API_KEY = 'AIzaSyBJy1g0R9vymyXW28Nfil5LmW87GMgFK3U'
 
 # Wi-Fi 연결 함수
 def connect_to_wifi(ssid, password):
