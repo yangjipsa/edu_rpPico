@@ -1,28 +1,12 @@
-from machine import Pin
+from machine import ADC
 import time
 
-# GPIO 핀 설정x
-led2 = Pin(0, Pin.OUT)
-led3 = Pin(1, Pin.OUT)
-sw1 = Pin(3, Pin.IN)
-sw2 = Pin(4, Pin.IN)
+sensor_temp = ADC(4)
+CONVERSION_FACTOR = 3.3 / (65535)  # 16비트 ADC의 분해능과 전압 기준 (3.3V)
 
-# 메인 루프
-try:
-    while True:
-        valSW1 = sw1.value()
-        valSW2 = sw2.value()
-        time.sleep(0.01)
-        
-        if (not valSW1) :
-            led2.off() # led on
-        else:
-            led2.on() # led off
-        
-        if (not valSW2) :
-            led3.off() # led on
-        else:
-            led3.on() # led off
-
-except KeyboardInterrupt :
-    print("Turn off")
+while True:
+    raw_value = sensor_temp.read_u16()
+    voltage = raw_value * CONVERSION_FACTOR
+    temperature = 27 - (voltage - 0.706) / 0.001721
+    print(f"Temperature: {temperature:.2f} °C")
+    time.sleep(1)
