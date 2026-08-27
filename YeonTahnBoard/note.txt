@@ -1,6 +1,9 @@
 from machine import Pin
 import time
 
+# GPIO 핀 설정x
+led2 = Pin(0, Pin.OUT)
+led3 = Pin(1, Pin.OUT)
 sw1 = Pin(3, Pin.IN)
 sw2 = Pin(4, Pin.IN)
 
@@ -11,7 +14,15 @@ try:
         valSW2 = sw2.value()
         time.sleep(0.01)
         
-        print(f"SW1 : {valSW1} | SW2 : {valSW2}")
+        if (not valSW1) :
+            led2.off() # led on
+        else:
+            led2.on() # led off
         
+        if (not valSW2) :
+            led3.off() # led on
+        else:
+            led3.on() # led off
+
 except KeyboardInterrupt :
     print("Turn off")
