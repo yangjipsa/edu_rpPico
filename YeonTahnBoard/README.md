@@ -4,6 +4,8 @@
 
 > 홈페이지 · <https://touchlabs.kr>
 
+![YeonTahn Board V1](board_3d.png)
+
 ---
 
 ## 준비물
