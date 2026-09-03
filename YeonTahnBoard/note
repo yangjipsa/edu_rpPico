@@ -1,0 +1,3 @@
+FB_URL     = "https://sht-test-15cbd-default-rtdb.firebaseio.com"
+FB_PATH    = "yeontahn"                    # 데이터를 담을 최상위 경로
+DB_SECRET  = "rANiASOHxwW72VpEg8NoqVQRAXmGunUIeq7bDBPs"   
