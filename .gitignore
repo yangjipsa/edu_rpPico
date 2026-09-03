@@ -1,0 +1,9 @@
+# Python
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
+
+# 개인 설정/비밀 (실수 방지)
+secrets.py
