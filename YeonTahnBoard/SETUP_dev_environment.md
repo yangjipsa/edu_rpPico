@@ -59,5 +59,10 @@
 | # | 파일 | 내용 | 상태 |
 |---|------|------|------|
 | 14 | `14_WiFi_NTP.py` | Wi-Fi 접속 + NTP 현재시각(KST) 받기 | ✅ |
-| 15 | `15_Firebase_Upload.py` | 스위치·ADC 값을 Firebase에 업로드 | 🔜 예정 |
-| 16 | `16_AI_Control.py` | Gemini/Claude API로 보드 정보 전송 → JSON 응답으로 보드 제어 | 🔜 예정 |
+| 15 | `15_Firebase_Upload.py` | 스위치·ADC 값을 Firebase에 업로드 | ✅ |
+| 16 | `16_AI_Control.py` | Gemini/Claude API로 보드 정보 전송 → JSON 응답으로 보드 제어 | ✅ |
+
+> ★ **한글 대화형 입력(16번)은 Thonny 에서만** 됩니다. Viper 웹터미널은 한글
+> IME 를 조합 과정(로마자+백스페이스)으로 흘려보내 대화형 한글 입력이
+> 불가합니다. Viper 에서 쓰려면 `16_AI_Control.py` 의 `USE_COMMAND_LIST = True`
+> 로 두어 COMMANDS 리스트를 자동 실행하세요.
